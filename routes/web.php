@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -316,3 +317,13 @@ use App\Http\Controllers\studentsController;
 Route::get('home', [studentsController::class, 'index']);
 Route::get('EditProfile', [studentsController::class, 'editprofile']);
 Route::post('update_profile', 'studentsController@updateprofile');
+
+//MeetingBooking
+use App\Http\Controllers\MeetingController;
+Route::get("AddMeetingBooking", [MeetingController::class, 'addMeetingBooking']);
+Route::view("addbookingmeeting","AddMeetingBooking");
+
+
+
+
+
