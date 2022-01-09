@@ -30,29 +30,30 @@
             <h4>PSM Title:</h4>
           </td>
          	<center>
-		<button class="btn active"><a href="">Add Booking</a></button>
-        <button class="btn active"><a href="" target="_blank">View Booking </a></button>
+			 <h2 style="text-align: center;">MEETING BOOKING FORM</h2>
+		<button <a href="">Add Booking</a></button>
+        <button <a href="" target="_blank">View Booking </a></button>
   </center>
 	<center><fieldset>
-			<h2 style="text-align: center;">MEETING BOOKING FORM</h2>
-			<br>
+		     <br>
+			
 			<table>
 				<form action="AddMeetingBooking" method="POST" name="meetingForm"  >
                 @csrf
-				<tr>
+				
+				<td><td>
 					<p>
 					<td>
-                    
 					<label for="BookingID">Supervisor ID:</label>
 					</td>
 					<td>
 					<input type="text" name="SV_id" id="SV_ID">
 					</td>
 					</p>
-				</tr>
-				
-
+				</td>
 				<tr>
+
+				<td><td>
 					<p>
 					<td>
 					<label for="id">Student ID:</label>
@@ -61,10 +62,10 @@
 					<input type="text" name="STD_id" id="STD_ID">
 					<td>
 					</p>
-				</tr>
-
-				
+				</td>
 				<tr>
+				
+				<td><td>
 					<p>
 					<td>
 					<label for=Meeting_Date>Meeting Date:</label>
@@ -73,9 +74,10 @@
 					<input type="date" name="Meeting_date" id="Meeting_Date">
 					</td>
 					</p>
-				</tr>
+				</td>
 
-				<tr>
+                <tr>
+				<td><td>
 					<p>
 					<td>
 					<label for=Meeting_Start>Start Time:</label>
@@ -84,9 +86,10 @@
 					<input type="time" name="Meeting_start" id="Meeting_Start">
 					</td>
 					</p>
-				</tr>
+				</td>
+                <tr>
 
-				<tr>
+				<td><td>
 					<p>
 					<td>
 					<label for=Meeting_End>End Time:</label>
@@ -95,7 +98,19 @@
 					<input type="time" name="Meeting_end" id="Meeting_End">
 					</td>
 					</p>
-				</tr>
+				</td>
+				<tr>
+
+				<td><td>
+					<p>
+					<td>
+					<label for="Meeting_Purpose">Meeting purpose:</label>
+					</td>
+					<td>
+					<input type="text" name="Meeting_purpose" id="Meeting_Purpose">
+					</td>
+					</p>
+				</td>
 
 				<tr>
 						<p>
@@ -108,10 +123,10 @@
 						</p>
 				</tr>
 			</table>
-			
-			<p></p>
-			<p>
+
+			<center>
 			<input type="submit" name="Submit" id="Submit" value="Submit" method="post">
+            </center>
 			</p>
 			</form>
 		</fieldset>

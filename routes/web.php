@@ -320,8 +320,8 @@ Route::post('update_profile', 'studentsController@updateprofile');
 
 //MeetingBooking
 use App\Http\Controllers\MeetingController;
-Route::get("AddMeetingBooking", [MeetingController::class, 'addMeetingBooking']);
-Route::view("addbookingmeeting","AddMeetingBooking");
+Route::get('AddMeetingBooking', [MeetingController::class, 'addMeetingBooking']);
+
 
 
 
